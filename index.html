@@ -5,24 +5,177 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" />
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="container container-nav">
       <div class="site-title">
-        <h1>Jake Joseph</h1>
+        <h1><a href="#">JJ</a></h1>
       </div>
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#" class="nav-link nav-link-resume">Resume</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main>
+    <section class=" home container" id="home">
+      <div class="home-info">
+        <p>Hi, my name is</p>
+        <h2>Jake Joseph</h2>
+        <h3>I enjoy solving problems with code</h3>
+        <p>I am a Toronto based Mechanical Engineer turned Computer Science student. Currently,
+          I am in my 3rd year and looking for internship opportunities where I get to solve hard problems for interesting
+          companies.
+        </p>
+        <div class="home-links">
+          <a href="#" class="btn btn-home"><img src="./github.png" class="icon"/></a>
+          <a href="#" class="btn btn-home"><img src="./linkedin.png" class="icon" /></a>
+          <a href="#" class="btn btn-home"><img src="./twitter.png" class="icon"/></a>
+        </div>
+      </div>
+    </section>
+    <section class="about container" id="about">
+      <div class="container-about">
+        <h2>About Me</h2>
+        <div class="about-info">
+          <div class="about-info-content">
+            <p>Hello! My name is Jake and I enjoy solving problems through code. Previously, 
+              I was a Mechanical Engineer at <a>Niigon</a> and <a>Husky</a>, where I lead a
+              patent-pending project that resulted in an annual savings of $100,000!
+            </p>
+            <p>Today, I spend my time as dabbling in crypto, chasing personal records in power lifiting and
+              waiting for the world to open so I can travel again. My main focus for 2021 is to secure an
+              internship while also continuing to improve my technical skills.
+            </p>
+            <p>Here are a few technologies that I have been working with recently</p>
+            <ul>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+            </ul>
+          </div>
+          <div class="about-info-image">
+          <img src="./aboutme.png" class="about-img" />
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <section class="experience container" id="experience">
+      <h2>Where I've Worked</h2>
+      <div class="experience-companies">
+        <a href="#" >Husky</a>
+        <a href="#" >Niigon</a>
+      </div>
+      <div class="experience-info">
+        <h3>Mechanical Design Engineer</h3>
+        <p>May 2017 - Aug 2018 | Jul 2019 - Feb 2020</p>
+        <ul>
+          <li>Mechanical Designer on the Service Team within Development Engineering</li>
+          <li>Spearheaded three critical projects which resulted in customer retention, a patent, and  an annual savings of over $100K</li>
+          <li>Worked closely with assembly personnel, service technicians, and other designers to gather information for root cause analysis and to brainstorm potential resolutions.</li>
+          <li>Presented regular project updates to multiple engineering teams, the service community and to upper management.</li>
+        </ul>
+      </div>
+      <div class="experience-info">
+        <h3>Mechanical Design Engineer</h3>
+        <p>Mar 2020 - June 2020</p>
+        <ul>
+          <li>Mechanical Designer on the Injection Team within Product Development</li>
+          <li>Developed, designed and manufactured various structures to prevent machine vibration and increase rigidity</li>
+        </ul>
+      </div>
+    </section>
+    <section class="work container" id="work">
+      <h2>Some Things I've Built</h2>
+      <div class="work-info">
+        <div class="work-project">
+          <h3>Portfolio</h3>
+          <p> Designed from scratch to display fundamentals of web development
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <ul>
+            <li class="github"><a href="#">Github</a></li>
+            <li class="website"><a href="#">Website</a></li>
+          </ul>
+        </div>
+        <div class="work-project">
+          <h3>JavaScript to Python</h3>
+          <p>Utilized OpenAI API to convert simple Javascript expressions into Python
+          </p>
+          <ul>
+            <li>React</li>
+            <li>React</li>
+            <li>React</li>
+          </ul>
+          <ul>
+            <li class="github"><a href="#">Github</a></li>
+            <li class="website"><a href="#">Website</a></li>
+          </ul>
+        </div>
+        <div class="work-project">
+          <h3>Reno'd</h3>
+          <p> Enabled everday people to find the best-in-class renovators for their home
+          </p>
+          <ul>
+            <li>React</li>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>Node.js</li>
+          </ul>
+          <ul>
+            <li class="github"><a href="#">Github</a></li>
+            <li class="website"><a href="#">Website</a></li>
+          </ul>
+        </div>
+        <div class="work-project">
+          <h3>Beam Bending</h3>
+          <p>Calculate the normal force, shear force and bending moments on a beam 
+          </p>
+          <ul>
+            <li>Python</li>
+          </ul>
+          <ul>
+            <li class="github"><a href="#">Github</a></li>
+            <li class="website"><a href="#">Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2>Get In Touch</h2>
+      <p>Ask me about anything related to fitness, photography, backpacking or crypto! I would also love to speak about
+        how I can provide value to your company as an intern!</p>
+      <a href="#">Say Hello</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contact-links" id="contact">
+      <a href="#">Github</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>Designed and Built by Jake Joseph</p>
+  </footer>
+
 </body>
 </html>
