@@ -131,6 +131,30 @@ p {
   line-height: 1.4em;
 }
 
+/************ CONTACT ************/
+.contact {
+  align-items: center;
+}
+
+.contact p {
+  width: 50%;
+  text-align: center;
+  margin: 1.5em;
+}
+
+.contact a {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  color: black;
+}
+
+.contact a:hover,
+.contact a:focus {
+  color: white;
+  background: black;
+}
+
 /************ FOOTER ************/
 footer {
   padding: 1em;
