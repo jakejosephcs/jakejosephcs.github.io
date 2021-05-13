@@ -131,6 +131,58 @@ p {
   line-height: 1.4em;
 }
 
+/************ ABOUT ************/
+
+.about h2 {
+  margin: 0.5em 0 1.5em 0;
+}
+
+.about-info {
+  display: flex;
+}
+
+.about-info-content {
+  width: 65%;
+  font-size: 1.125rem;
+}
+
+.about-info-content p {
+  margin-bottom: 0.75em;
+}
+
+.about-info-content ul {
+  columns: 2;
+  list-style: square;
+}
+
+.about-info-image {
+  width: 30%;
+  margin-left: 1em;
+}
+
+.about-img {
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 1em; */
+  /* border: 1px solid black; */
+}
+
+@media (max-width: 675px) {
+  .about-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info-image {
+    margin-left: 0;
+    width: 60%;
+  }
+
+  .about-info-content {
+    width: 100%;
+  }
+}
+
 /************ EXPERIENCE ************/
 
 .experience {
