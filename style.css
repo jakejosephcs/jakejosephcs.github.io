@@ -131,6 +131,23 @@ p {
   line-height: 1.4em;
 }
 
+/* HOME */
+
+.home p {
+  margin: 0 0 1.25em 0.125em;
+  font-size: 1.5em;
+}
+
+.home h2 {
+  margin: auto 0;
+  font-size: 3em;
+}
+
+.home h3 {
+  margin: 0.8em 0;
+  font-size: 2em;
+}
+
 /************ ABOUT ************/
 
 .about h2 {
