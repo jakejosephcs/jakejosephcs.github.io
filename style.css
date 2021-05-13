@@ -131,6 +131,48 @@ p {
   line-height: 1.4em;
 }
 
+/************ EXPERIENCE ************/
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience h2 {
+  margin-bottom: 1em;
+}
+
+.experience-companies {
+  margin-bottom: 1em;
+}
+
+.experience-companies button {
+  border: none;
+  padding: 0.5em 2em;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  color: black;
+  opacity: 0.4;
+}
+
+.experience-companies button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.experience-companies .active-btn {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  color: black;
+  opacity: 1;
+}
+
+.experience-info {
+  height: 450px;
+}
+
 /************ WORK ************/
 .work {
   display: flex;
