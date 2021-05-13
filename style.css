@@ -41,7 +41,7 @@ header {
 }
 
 ul {
-  padding: 01em;
+  padding: 1em;
 }
 
 /* Utility */
@@ -139,7 +139,8 @@ p {
   font-size: 1.25rem;
 }
 
-.site-title a:hover {
+.site-title a:hover,
+.site-title a:focus {
   color: #ee6c4d;
 }
 
@@ -200,7 +201,7 @@ p {
   }
 }
 
-/* HOME */
+/************ HOME ************/
 
 .home p {
   margin: 0 0 1.25em 0.125em;
@@ -237,8 +238,14 @@ p {
 }
 
 .about-info-content ul {
-  columns: 2;
-  list-style: square;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.about-info-content ul li {
+  margin: 0 0.25em;
 }
 
 .about-info-image {
@@ -266,6 +273,10 @@ p {
 
   .about-info-content {
     width: 100%;
+  }
+
+  .about-info-content ul {
+    justify-content: center;
   }
 }
 
