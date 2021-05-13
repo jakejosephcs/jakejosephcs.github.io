@@ -131,6 +131,92 @@ p {
   line-height: 1.4em;
 }
 
+/************ WORK ************/
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.work > h2 {
+  margin-bottom: 2em;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background: lightgray;
+  margin-bottom: 2em;
+}
+
+.work-card-img-container {
+  flex-basis: 60%;
+}
+
+.work-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.work-card-content {
+  padding: 1em;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'title title'
+    'body body'
+    'code-links tech-used';
+}
+
+.work-card-title {
+  grid-area: title;
+  margin-bottom: 0.5em;
+  justify-self: left;
+}
+
+.work-card-body {
+  grid-area: body;
+  margin-bottom: 3em;
+}
+
+.work-code-links {
+  grid-area: code-links;
+}
+
+.work-code-links * {
+  margin-right: 0.125em;
+}
+
+.work-tech-used {
+  grid-area: tech-used;
+  justify-self: end;
+}
+
+.work-tech-used * {
+  margin-left: 0.125em;
+}
+
+@media (min-width: 500px) {
+  .work-card {
+    flex-direction: row;
+  }
+
+  .work-card.alt .work-card-img-container {
+    order: 1;
+  }
+
+  .work-card .work-card-title {
+    justify-self: right;
+  }
+
+  .work-card.alt .work-card-title {
+    justify-self: left;
+  }
+}
+
 /************ CONTACT ************/
 .contact {
   align-items: center;
