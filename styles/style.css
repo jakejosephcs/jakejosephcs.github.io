@@ -386,10 +386,6 @@ p {
   justify-self: end;
 }
 
-.work-tech-used * {
-  margin-left: 0.125em;
-}
-
 @media (min-width: 500px) {
   .work-card {
     flex-direction: row;
