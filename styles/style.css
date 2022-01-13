@@ -218,6 +218,11 @@ p {
   font-size: 2em;
 }
 
+.home-info .links {
+  font-size: 1.5rem;
+
+}
+
 /************ ABOUT ************/
 
 .about h2 {
